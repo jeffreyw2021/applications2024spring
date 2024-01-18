@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    min-height: 100vh;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    padding: 3rem 4rem;
+}
+
+.block {
+    margin-bottom: 30px;
+}
+.storeName {
+    font-weight: 800;
+    color: #888;
+    text-transform:capitalize;
+}
+.productName {
+    font-weight: 800;
+    color: #888;
+}
+ol{
+    margin-top: 20px;
+    list-style: decimal;
+    margin-left: 20px;
+}
+li {
+    margin-bottom: 20px;
+}
+li p:first-child {
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
