@@ -10,7 +10,7 @@ body {
     line-height: 1.5;
     color: #333;
     padding: 3rem 4rem;
-    --highlight-color: rgb(221, 99, 252);
+    --highlight-color: #333;
 }
 
 .block {
@@ -22,7 +22,7 @@ body {
     text-transform:capitalize;
 }
 .productName {
-    font-weight: 800;
+    font-weight: 400;
     color: var(--highlight-color);
 }
 ol{
