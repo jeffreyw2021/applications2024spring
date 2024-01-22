@@ -27,8 +27,17 @@ ol{
     list-style: decimal;
     margin-left: 20px;
 }
+ul{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-weight: 800;
+}
 li {
     margin-bottom: 20px;
+}
+ul li{
+    margin-bottom: 10px;
 }
 li p:first-child {
     margin-bottom: 5px;
@@ -38,4 +47,12 @@ hr {
     margin: 20px 0;
     border: 0;
     border-top: 1px solid #ccc;
+}
+
+.bulletTitle {
+    font-size: 24px;
+    font-weight: 800;
+}
+.bulletBody {
+    font-weight: 400;
 }
