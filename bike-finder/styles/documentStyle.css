@@ -56,3 +56,13 @@ hr {
 .bulletBody {
     font-weight: 400;
 }
+.source{
+    margin-bottom: 10px;
+}
+.source p{
+    font-weight: 400 !important;
+    margin-bottom: -3px !important;
+}
+.mlaLink{
+
+}
