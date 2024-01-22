@@ -10,7 +10,6 @@ body {
     line-height: 1.5;
     color: #333;
     padding: 3rem 4rem;
-    --highlight-color: #333;
 }
 
 .block {
@@ -18,12 +17,10 @@ body {
 }
 .storeName {
     font-weight: 800;
-    color: var(--highlight-color);
     text-transform:capitalize;
 }
 .productName {
     font-weight: 400;
-    color: var(--highlight-color);
 }
 ol{
     margin-top: 20px;
