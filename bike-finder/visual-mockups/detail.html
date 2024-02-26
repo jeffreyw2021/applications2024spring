@@ -5,10 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visual Mockup</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbarStyle.css">
 </head>
 
 <body>
-
+    <div class="navbar">
+        <h1 class="siteName">Quick<span>Cycle</span></h1>
+        <div class="navbar-content">
+            <div class="navbar-btn-container">
+                <button class="navbar-btn">
+                    <input type="checkbox" name="navbtn" title="navbtncheck" value="search">
+                    <img src="assets/magnifier.svg" alt="search">
+                    <img src="assets/xmark.svg" alt="search">
+                </button>
+                <button class="navbar-btn">
+                    <img src="assets/user.svg" alt="user">
+                </button>
+                <button class="navbar-btn">
+                    <img src="assets/shoppingBag.svg" alt="bag">
+                </button>
+            </div>
+            <div class="navbar-middle">
+                <div class="navbar-filter-btn-container">
+                    <button class="navbar-filter-btn">
+                        <input type="radio" name="filterOption" title="filterCheck" value="mountainBike" checked>
+                        <span>All Bike</span>
+                    </button>
+                    <button class="navbar-filter-btn">
+                        <input type="radio" name="filterOption" title="filterCheck" value="mountainBike">
+                        <span>Mountain Bike</span>
+                    </button>
+                    <button class="navbar-filter-btn">
+                        <input type="radio" name="filterOption" title="filterCheck" value="roadBike">
+                        <span>Road Bike</span>
+                    </button>
+                    <button class="navbar-filter-btn">
+                        <input type="radio" name="filterOption" title="filterCheck" value="cityBike">
+                        <span>City Bike</span>
+                    </button>
+                    <button class="navbar-filter-btn">
+                        <input type="radio" name="filterOption" title="filterCheck" value="gravelBike">
+                        <span>Gravel Bike</span>
+                    </button>
+                    <button class="navbar-filter-btn">
+                        <input type="radio" name="filterOption" title="filterCheck" value="bmx">
+                        <span>BMX</span>
+                    </button>
+                    <button class="navbar-filter-btn">
+                        <input type="radio" name="filterOption" title="filterCheck" value="kidsBike">
+                        <span>Kids Bike</span>
+                    </button>
+                </div>
+                <div class="searchbar">
+                    <img src="assets/magnifier.svg" alt="search">
+                    <input type="text" name="search" id="search" placeholder="Search...">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
