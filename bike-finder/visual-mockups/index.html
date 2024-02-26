@@ -6,55 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visual Mockup</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbarStyle.css">
+    <link rel="stylesheet" href="css/containerStyle.css">
 </head>
 
 <body>
     <div class="navbar">
-        <h1 class="siteName">Website Name</h1>
-        <div class="navbar-filter-btn-container">
-            <button class="navbar-filter-btn">
-                <input type="checkbox">
-                <span>Mountain Bike</span>
-                <span>Mountain Bike</span>
-            </button>
-            <button class="navbar-filter-btn">
-                <input type="checkbox">
-                <span>Road Bike</span>
-                <span>Road Bike</span>
-            </button>
-            <button class="navbar-filter-btn">
-                <input type="checkbox">
-                <span>City Bike</span>
-                <span>City Bike</span>
-            </button>
-            <button class="navbar-filter-btn">
-                <input type="checkbox">
-                <span>Gravel Bike</span>
-                <span>Gravel Bike</span>
-            </button>
-            <button class="navbar-filter-btn">
-                <input type="checkbox">
-                <span>BMX</span>
-                <span>BMX</span>
-            </button>
-            <button class="navbar-filter-btn">
-                <input type="checkbox">
-                <span>Kids Bike</span>
-                <span>Kids Bike</span>
-            </button>
-        </div>
-        <div class="navbar-btn-container">
-            <button class="navbar-btn">
-                <img src="assets/magnifier.svg" alt="search">
-            </button>
-            <button class="navbar-btn">
-                <img src="assets/user.svg" alt="search">
-            </button>
-            <button class="navbar-btn">
-                <img src="assets/shoppingBag.svg" alt="search">
-            </button>
+        <h1 class="siteName">Quick<span>Cycle</span></h1>
+        <div class="navbar-content">
+            <div class="navbar-btn-container">
+                <button class="navbar-btn">
+                    <input type="checkbox" name="navbtn" title="navbtncheck" value="search">
+                    <img src="assets/magnifier.svg" alt="search">
+                    <img src="assets/xmark.svg" alt="search">
+                </button>
+                <button class="navbar-btn">
+                    <img src="assets/user.svg" alt="user">
+                </button>
+                <button class="navbar-btn">
+                    <img src="assets/shoppingBag.svg" alt="bag">
+                </button>
+            </div>
+            <div class="navbar-middle">
+                <div class="navbar-filter-btn-container">
+                    <button class="navbar-filter-btn">
+                        <input type="radio" name="filterOption" title="filterCheck" value="mountainBike" checked>
+                        <span>All Bike</span>
+                    </button>
+                    <button class="navbar-filter-btn">
+                        <input type="radio" name="filterOption" title="filterCheck" value="mountainBike">
+                        <span>Mountain Bike</span>
+                    </button>
+                    <button class="navbar-filter-btn">
+                        <input type="radio" name="filterOption" title="filterCheck" value="roadBike">
+                        <span>Road Bike</span>
+                    </button>
+                    <button class="navbar-filter-btn">
+                        <input type="radio" name="filterOption" title="filterCheck" value="cityBike">
+                        <span>City Bike</span>
+                    </button>
+                    <button class="navbar-filter-btn">
+                        <input type="radio" name="filterOption" title="filterCheck" value="gravelBike">
+                        <span>Gravel Bike</span>
+                    </button>
+                    <button class="navbar-filter-btn">
+                        <input type="radio" name="filterOption" title="filterCheck" value="bmx">
+                        <span>BMX</span>
+                    </button>
+                    <button class="navbar-filter-btn">
+                        <input type="radio" name="filterOption" title="filterCheck" value="kidsBike">
+                        <span>Kids Bike</span>
+                    </button>
+                </div>
+                <div class="searchbar">
+                    <img src="assets/magnifier.svg" alt="search">
+                    <input type="text" name="search" id="search" placeholder="Search...">
+                </div>
+            </div>
         </div>
     </div>
+
+    <div class="container">
+        <div class="filter-container">
+            <div class="filter-block">
+                <div class="filter-title">
+                    <h5>Size</h5>
+                    <input type="checkbox" name="filterExpandBtn" title="filterExpandBtn" value="filterExpand">
+                    <img src="assets/plus.svg" alt="plus" class="filterPlus">
+                    <img src="assets/minus.svg" alt="minus" class="filterMinus">
+                </div>
+                <div class="choice-options">
+                    <div class="choice-option">
+                        <input type="checkbox" name="size" title="sizeCheck" value="xs">
+                        <span>2XS</span>
+                    </div>
+                    <div class="choice-option">
+                        <input type="checkbox" name="size" title="sizeCheck" value="xs">
+                        <span>XS</span>
+                    </div>
+                    <div class="choice-option">
+                        <input type="checkbox" name="size" title="sizeCheck" value="xs">
+                        <span>S</span>
+                    </div>
+                    <div class="choice-option">
+                        <input type="checkbox" name="size" title="sizeCheck" value="xs">
+                        <span>M</span>
+                    </div>
+                    <div class="choice-option">
+                        <input type="checkbox" name="size" title="sizeCheck" value="xs">
+                        <span>L</span>
+                    </div>
+                    <div class="choice-option">
+                        <input type="checkbox" name="size" title="sizeCheck" value="xs">
+                        <span>XL</span>
+                    </div>
+                </div>
+                <div class="sizebtn">What's my size?</div>
+            </div>
+        </div>
+        <div class="catalog-container">
+        </div>
+    </div>
+
+    <script src="js/filterContent.js"></script>
+    <script src="js/catalogContent.js"></script>
 </body>
 
 </html>
