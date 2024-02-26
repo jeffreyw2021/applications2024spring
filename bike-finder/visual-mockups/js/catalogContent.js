@@ -134,8 +134,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const ratingPercentage = bike.rating / 5 * 100;
         const formattedPrice = `$${bike.price.toLocaleString()}`;
         const imagePath = `assets/bikes/bike${index + 1}.png`;
-        const card = document.createElement('div');
+        const card = document.createElement('a');
         card.className = 'catalog-card';
+        card.href = 'detail.html';
         card.innerHTML = `
             <div class="catalog-card-top">
                 <img src="${imagePath}" alt="${bike.model}">

@@ -223,6 +223,8 @@
 }
 
 .catalog-card {
+    text-decoration: none;
+    color: var(--black);
     width: calc(100% / 4 - 1rem);
     background-color: var(--smokeWhite);
     border: 1px solid var(--gray);
