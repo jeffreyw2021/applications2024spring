@@ -7,7 +7,7 @@
     <title>Visual Mockup</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbarStyle.css">
-    <link rel="stylesheet" href="css/detailStyle.css">
+    <link rel="stylesheet" href="css/containerStyle.css">
 </head>
 
 <body>
@@ -67,26 +67,49 @@
     </div>
 
     <div class="container">
-        <div class="top-container">
-            <div class="top-carousel-container">
-                <img src="assets/bikes/bike2.png" alt="bike2">
-                <div class="pagination-container">
-                    <div class="pagination">
-                        <img src="assets/bikes/bike3.png" alt="snap">
-                        <img src="assets/bikes/bike3.png" alt="snap">
-                        <img src="assets/bikes/bike3.png" alt="snap">
-                        <img src="assets/bikes/bike3.png" alt="snap">
+        <div class="filter-container">
+            <div class="filter-block">
+                <div class="filter-title">
+                    <h5>Size</h5>
+                    <input type="checkbox" name="filterExpandBtn" title="filterExpandBtn" value="filterExpand">
+                    <img src="assets/plus.svg" alt="plus" class="filterPlus">
+                    <img src="assets/minus.svg" alt="minus" class="filterMinus">
+                </div>
+                <div class="choice-options">
+                    <div class="choice-option">
+                        <input type="checkbox" name="size" title="sizeCheck" value="xs">
+                        <span>2XS</span>
+                    </div>
+                    <div class="choice-option">
+                        <input type="checkbox" name="size" title="sizeCheck" value="xs">
+                        <span>XS</span>
+                    </div>
+                    <div class="choice-option">
+                        <input type="checkbox" name="size" title="sizeCheck" value="xs">
+                        <span>S</span>
+                    </div>
+                    <div class="choice-option">
+                        <input type="checkbox" name="size" title="sizeCheck" value="xs">
+                        <span>M</span>
+                    </div>
+                    <div class="choice-option">
+                        <input type="checkbox" name="size" title="sizeCheck" value="xs">
+                        <span>L</span>
+                    </div>
+                    <div class="choice-option">
+                        <input type="checkbox" name="size" title="sizeCheck" value="xs">
+                        <span>XL</span>
                     </div>
                 </div>
-            </div>
-            <div class="top-spec-container">
-                <img src="assets/spec.svg" alt="spec">
+                <div class="sizebtn">What's my size?</div>
             </div>
         </div>
-        <div class="bottom-container">
-            <img src="assets/bottom.svg" alt="bottom">
+        <div class="catalog-container">
         </div>
     </div>
+
+    <script src="js/filterContent.js"></script>
+    <script src="js/catalogContent.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Roboto Condensed", sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    --white: #fff;
+    --smokeWhite: #f5f5f5;
+    --lightGray: #f0f0f0;
+    --gray: #f1f1f1;
+    --darkGray: #b8b8b8;
+    --demiBlack: #333;
+    --black: #080808;
+}
+
+html {
+    font-size: calc(10px + (16 - 12) * ((100vw - 400px) / (1200 - 400)));
+}
+
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
