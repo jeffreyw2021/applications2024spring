@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Mockup</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbarStyle.css">
+    <link rel="stylesheet" href="css/catalogStyle.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">
+            <img class="siteName" src="assets/quickcycle-logo.svg" alt="logo">
+        </a>
+        <div class="navbar-content">
+            <div class="navbar-btn-container">
+                <button class="navbar-btn">
+                    <input type="checkbox" name="navbtn" title="navbtncheck" value="search">
+                    <img src="assets/magnifier.svg" alt="search">
+                    <img src="assets/xmark.svg" alt="search">
+                </button>
+                <button class="navbar-btn">
+                    <img src="assets/user.svg" alt="user">
+                </button>
+                <button class="navbar-btn">
+                    <img src="assets/shoppingBag.svg" alt="bag">
+                </button>
+            </div>
+            <div class="navbar-middle">
+                <div class="navbar-filter-btn-container">
+                </div>
+                <div class="searchbar">
+                    <img src="assets/magnifier.svg" alt="search">
+                    <input type="text" name="search" id="search" placeholder="Search...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="filter-container">
+            <div class="filter-block">
+                <div class="filter-title">
+                    <h5>Size</h5>
+                    <input type="checkbox" name="filterExpandBtn" title="filterExpandBtn" value="filterExpand">
+                    <img src="assets/plus.svg" alt="plus" class="filterPlus">
+                    <img src="assets/minus.svg" alt="minus" class="filterMinus">
+                </div>
+                <div class="choice-options">
+                    <div class="choice-option">
+                        <input type="checkbox" name="size" title="sizeCheck" value="xs">
+                        <span>2XS</span>
+                    </div>
+                    <div class="choice-option">
+                        <input type="checkbox" name="size" title="sizeCheck" value="xs">
+                        <span>XS</span>
+                    </div>
+                    <div class="choice-option">
+                        <input type="checkbox" name="size" title="sizeCheck" value="xs">
+                        <span>S</span>
+                    </div>
+                    <div class="choice-option">
+                        <input type="checkbox" name="size" title="sizeCheck" value="xs">
+                        <span>M</span>
+                    </div>
+                    <div class="choice-option">
+                        <input type="checkbox" name="size" title="sizeCheck" value="xs">
+                        <span>L</span>
+                    </div>
+                    <div class="choice-option">
+                        <input type="checkbox" name="size" title="sizeCheck" value="xs">
+                        <span>XL</span>
+                    </div>
+                </div>
+                <div class="sizebtn">What's my size?</div>
+            </div>
+            <div class="filter-block">
+                <div class="filter-title">
+                    <h5>Price</h5>
+                    <input type="checkbox" name="filterExpandBtn" title="filterExpandBtn" value="filterExpand">
+                    <img src="assets/plus.svg" alt="plus" class="filterPlus">
+                    <img src="assets/minus.svg" alt="minus" class="filterMinus">
+                </div>
+                <div class="price-input-container">
+                    <input type="text" name="minPrice" id="minPrice" placeholder="Min" class="price-input">
+                    -
+                    <input type="text" name="maxPrice" id="maxPrice" placeholder="Max" class="price-input">
+                </div>
+                <div class="filter-options">
+                    <div class="filter-option-item">
+                        <div class="customCheckbox"></div>
+                        <input type="checkbox" name="filterOption" title="filterCheck" value="<1,000">
+                        <span>&lt;400</span>
+                    </div>
+                    <div class="filter-option-item">
+                        <div class="customCheckbox"></div>
+                        <input type="checkbox" name="filterOption" title="filterCheck" value="1,000-1,999">
+                        <span>400-999</span>
+                    </div>
+                    <div class="filter-option-item">
+                        <div class="customCheckbox"></div>
+                        <input type="checkbox" name="filterOption" title="filterCheck" value="2,000-2,999">
+                        <span>1,000-1,999</span>
+                    </div>
+                    <div class="filter-option-item">
+                        <div class="customCheckbox"></div>
+                        <input type="checkbox" name="filterOption" title="filterCheck" value="3,000-3,999">
+                        <span>2,000-2,999</span>
+                    </div>
+                    <div class="filter-option-item">
+                        <div class="customCheckbox"></div>
+                        <input type="checkbox" name="filterOption" title="filterCheck" value=">3,999">
+                        <span>&gt;3,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="catalog-container">
+            <div class="hero">
+                <h1 class="hero-title"></h1>
+                <div class="hero-backdrop"></div>
+            </div>
+            <div class="sort-container">
+                <label for="sort-by">Sort by:</label>
+                <select id="sort-by" name="sort-by">
+                    <option value="default">Recommended</option>
+                    <option value="price-low-high">Price: Low to High</option>
+                    <option value="price-high-low">Price: High to Low</option>
+                    <option value="rating-high-low">Rating: High to Low</option>
+                    <option value="newest">Newest Arrivals</option>
+                </select>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/filterContent.js"></script>
+    <script src="js/catalogContent.js"></script>
+</body>
+
+</html>
