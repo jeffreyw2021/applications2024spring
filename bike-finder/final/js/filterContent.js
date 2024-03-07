@@ -12,6 +12,22 @@ document.addEventListener('DOMContentLoaded', function () {
                 ]
             },
             {
+                "title": "Brand",
+                "expanded": true,
+                "options": [
+                    "Giant",
+                    "Trek",
+                    "Specialized",
+                    "Cannondale",
+                    "Santa Cruz",
+                    "Yeti",
+                    "Kona",
+                    "Scott",
+                    "Canyon",
+                    "Rocky Mountain"
+                ]
+            },
+            {
                 "title": "Frame Material",
                 "expanded": false,
                 "options": [
